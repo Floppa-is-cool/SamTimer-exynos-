@@ -25,7 +25,7 @@ might work on s24+, not confirmed as i dont have the device original dev confirm
 
 ## 📦 Direct Download
 
-If you do not want to compile the app from source, you can download the pre-built, ready-to-install APK from the **[Releases page](insert link)**.
+If you do not want to compile the app from source, you can download the pre-built, ready-to-install APK from the **[https://github.com/Floppa-is-cool/SamTimer-exynos-/releases/tag/Realese]**.
 
 ## Overview
 
