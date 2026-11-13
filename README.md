@@ -8,6 +8,12 @@ One-tap Android root for Samsung Galaxy devices, built around the
 > Based on the **CVE-2026-98260-aurora** repo — its timer LPE port
 > (real-cred zero-write / fake-cred ksud late-load chains) is what
 > `app/src/main/cpp/timer.c` evolved from.
+
+Disclaimer
+
+Use at your own risk. The authors take no responsibility for data loss, bricked devices, or anything else that happens to hardware you point this at.
+
+
 # 🔐 Temporary Root Safety Guide
 
 > **Before installing any module you're unsure about:** remove your screen lock and confirm Download Mode works first. If you can't verify that, don't install it. A UI tweak isn't worth bricking your phone.
@@ -65,6 +71,7 @@ Community thread on safe vs. risky modules for temp root:
 ---
 
 *Stay safe — a bricked phone isn't worth a UI tweak.*
+⚠️ CRITICAL REBOOT WARNING: Do not use the normal "Restart" button or adb reboot after rooting. A soft reboot will cause a kernel panic due to the parked timer UAF nodes. To safely restart, use Power Off (hold the power button) and then turn the device back on manually.
 
 > [!WARNING]
 > For devices you own or are explicitly authorized to test. The exploit is a
@@ -92,19 +99,6 @@ If you do not want to compile the app from source, you can download the pre-buil
 | Exploit | CVE-2026-98260 (timer.c payload, built by Gradle) |
 | Root module | KernelSU-Next 3.4.2 (`ksud-next-generic-kdp`, android14-6.1 no-patch-text) |
 | Execution context
-## 📦 Direct Download
-
-If you do not want to compile the app from source, you can download the pre-built, ready-to-install APK from the **[Releases page](https://github.com/YOUR_USERNAME/SamTimer/releases)**.
-
-## Overview
-
-| | |
-| --- | --- |
-| Exploit | CVE-2026-98260 (timer.c payload, built by Gradle) |
-| Root module | KernelSU-Next 3.4.2 (`ksud-next-generic-kdp`, android14-6.1 no-patch-text) |
-| Execution context | Shizuku shell (uid 2000) |
-| su authorization | KernelSU-Next manager (`com.rifsxd.ksunext`), domain `u:r:ksu:s0` |
-| Root lifetime | Per-boot (ephemeral — cleared on reboot) |
 
 ## Features
 
@@ -138,7 +132,6 @@ Usage
 3. Grant su to your apps in the KernelSU-Next manager
 4. Optionally enable Auto-root after reboot
 
-⚠️ CRITICAL REBOOT WARNING: Do not use the normal "Restart" button or adb reboot after rooting. A soft reboot will cause a kernel panic due to the parked timer UAF nodes. To safely restart, use Power Off (hold the power button) and then turn the device back on manually.
 
 Chain
 
@@ -159,8 +152,3 @@ Credits / upstream
 · DirtyFrag (CVE-2026-43284, DFRoot lineage) — the autorun / failed-run-interlock pattern
 · Shizuku — shell-uid execution without a PC
 
-Disclaimer
-
-Use at your own risk. The authors take no responsibility for data loss, bricked devices, or anything else that happens to hardware you point this at.
-
-```
