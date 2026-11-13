@@ -71,6 +71,7 @@ Community thread on safe vs. risky modules for temp root:
 ---
 
 *Stay safe — a bricked phone isn't worth a UI tweak.*
+
 ⚠️ CRITICAL REBOOT WARNING: Do not use the normal "Restart" button or adb reboot after rooting. A soft reboot will cause a kernel panic due to the parked timer UAF nodes. To safely restart, use Power Off (hold the power button) and then turn the device back on manually.
 
 > [!WARNING]
