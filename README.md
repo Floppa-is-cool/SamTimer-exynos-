@@ -8,6 +8,63 @@ One-tap Android root for Samsung Galaxy devices, built around the
 > Based on the **CVE-2026-98260-aurora** repo — its timer LPE port
 > (real-cred zero-write / fake-cred ksud late-load chains) is what
 > `app/src/main/cpp/timer.c` evolved from.
+# 🔐 Temporary Root Safety Guide
+
+> **Before installing any module you're unsure about:** remove your screen lock and confirm Download Mode works first. If you can't verify that, don't install it. A UI tweak isn't worth bricking your phone.
+
+---
+
+## Table of Contents
+
+- [🚨 Do Not Flash (High Brick Risk)](#-do-not-flash-high-brick-risk)
+- [✅ Safe Modules (Runtime Only)](#-safe-modules-runtime-only)
+- [🚑 If Something Goes Wrong](#-if-something-goes-wrong)
+- [📎 Modules Guide Reference](#-modules-guide-reference)
+
+---
+
+## 🚨 Do Not Flash (High Brick Risk)
+
+These modify persistent partitions and can trigger the D2 hardware lock or cause a permanent brick:
+
+| Risk | Description |
+|------|-------------|
+| **Metamodules** (NoMount, Hybrid Mount, meta-overlayfs, etc.) | KernelSU uses these to mount system files, but on temporary root they're dangerous. They run with root access and can mount anything; a misconfigured one can corrupt the system partition and cause a bootloop or hard brick. |
+| **Partition writers** | Anything writing to `/system`, `/vendor`, `/boot`, or `/product`. |
+| **Boot script replacers** | Modules that modify `init.rc` or replace boot scripts. |
+| **Pre-boot starters** | Modules that need to launch before Android boots. |
+| **Magisk boot patches** | Patching the boot image writes directly to the boot partition. Avoid. |
+
+---
+
+## ✅ Safe Modules (Runtime Only)
+
+These run in memory, touch no partitions, and clear on reboot:
+
+- **LSPosed & Zygisk modules** — runtime app hooks.
+- **System UI tweaks** — cosmetic changes like Dynamic Island clones.
+- **Script-only modules** — anything limited to scripts or `system.prop`.
+
+---
+
+## 🚑 If Something Goes Wrong
+
+- **Stuck on "Reboot Device – D2" with no access to Download Mode:**
+  This means a hardware-level lock has been tripped — you'll need a new motherboard to recover.
+
+- **If you can still access Download Mode:**
+  Flash the stock firmware image.
+
+---
+
+## 📎 Modules Guide Reference
+
+Community thread on safe vs. risky modules for temp root:
+[r/androidroot — Modules Guide](https://www.reddit.com/r/androidroot/s/5ueXyhcuyz)
+
+---
+
+*Stay safe — a bricked phone isn't worth a UI tweak.*
 
 > [!WARNING]
 > For devices you own or are explicitly authorized to test. The exploit is a
