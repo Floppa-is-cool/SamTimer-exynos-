@@ -20,7 +20,8 @@ One-tap Android root for Samsung Galaxy devices, built around the
 This fork has been specifically tested and confirmed working on the following Exynos devices:
 *   **Galaxy S24 FE (Exynos 2400e)**: Model `SM-S721B` / `r12s` (Kernel `6.1.162-android14-11`, One UI 9). *Note: Uses the e1s (Exynos 2400) profile as the architecture is identical.*
 *   **Galaxy S24 (Exynos 2400)**: Model `SM-S921N` / `e1s` (Original upstream test device).
-
+confirmed:September patch and October 
+patch 
 might work on s24+, not confirmed as i dont have the device original dev confirms s24 and i confirm s24fe
 
 ## 📦 Direct Download
