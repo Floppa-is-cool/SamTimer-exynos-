@@ -1,5 +1,6 @@
 
 # SamTimer
+todo:fix modules 
 
 One-tap Android root for Samsung Galaxy devices, built around the
 **CVE-2026-98260** timer exploit (posix-cpu-timers UAF) and a
@@ -92,6 +93,38 @@ might work on s24+, not confirmed as i dont have the device original dev confirm
 ## 📦 Direct Download
 
 If you do not want to compile the app from source, you can download the pre-built, ready-to-install APK from the **[https://github.com/Floppa-is-cool/SamTimer-exynos-/releases/tag/Realese]**.
+
+#✅️download guide
+
+📥 Step 1: Download the 3 Required Apps
+
+You need three things installed on your phone:
+
+1. SamTimer APK: Download the pre-built app-debug.apk from the Releases page of this repository.
+2. KernelSU-Next APK: Download the latest release from KernelSU-Next on GitHub. (Do not use regular KernelSU, it will not work!)
+3. Shizuku: Download it from the Google Play Store.
+
+⚙️ Step 2: Setup Shizuku
+
+1. Go to Settings > About phone > Software information and tap Build number 7 times to unlock Developer Options.
+2. Go to Settings > Developer Options and turn on Wireless Debugging.
+3. Open the Shizuku app and follow the on-screen steps to start it using Wireless Debugging.
+4. Make sure Shizuku says "Running" in your notification shade.
+
+🚀 Step 3: Run the Exploit
+
+1. Install the KernelSU-Next app and the SamTimer app.
+2. Open SamTimer.
+3. Shizuku will pop up asking for permission. Tap Allow.
+4. Tap "Root now" and confirm.
+5. Wait 1 to 7 minutes. The screen might look frozen; this is normal. Keep the app open and the screen on.
+
+✅ Step 4: Verify Root
+
+1. Once SamTimer finishes, open the KernelSU-Next app.
+2. It should say "Working" with a green badge.
+3. You now have full temporary root!
+
 
 ## Overview
 
