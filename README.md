@@ -1,5 +1,5 @@
 
-# SamTimer
+# SamTimer fork by mayo
 todo:fix modules 
 
 One-tap Android root for Samsung Galaxy devices, built around the
