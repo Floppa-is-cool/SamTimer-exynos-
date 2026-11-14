@@ -88,7 +88,9 @@ This fork has been specifically tested and confirmed working on the following Ex
 *   **Galaxy S24 (Exynos 2400)**: Model `SM-S921N` / `e1s` (Original upstream test device).
 confirmed:September patch and October 
 patch 
-might work on s24+, not confirmed as i dont have the device original dev confirms s24 and i confirm s24fe
+
+works on
+s24/s24+/s24fe and s25fe
 
 ## 📦 Direct Download
 
