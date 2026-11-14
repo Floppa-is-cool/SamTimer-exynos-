@@ -49,7 +49,7 @@ These modify persistent partitions and can trigger the D2 hardware lock or cause
 These run in memory, touch no partitions, and clear on reboot:
 
 - **LSPosed & Zygisk modules** — runtime app hooks.
-- **System UI tweaks** — cosmetic changes like Dynamic Island clones.
+- **System UI tweaks** — cosmetic changes like Dynamic Island.
 - **Script-only modules** — anything limited to scripts or `system.prop`.
 
 ---
