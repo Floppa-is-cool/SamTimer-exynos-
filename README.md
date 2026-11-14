@@ -48,7 +48,7 @@ Tested and confirmed working on:
 
 - **Galaxy S24 FE (Exynos 2400e)** — `SM-S721B` / `r12s`, kernel `6.1.162-android14-11`, One UI 9 *(uses the e1s / Exynos 2400 profile — identical architecture)*
 - **Galaxy S24 (Exynos 2400)** — `SM-S921N` / `e1s` *(original upstream test device)*
-- **S24 / S24+ / S24 FE / S25 FE** — confirmed on both the September and October security patches
+- **S24 / S24+ / S24 FE / S25 FE**  confirmed on both the September and October security patches
 
 ---
 
