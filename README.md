@@ -80,7 +80,7 @@ Tested and confirmed working on:
 
 ### Step 1 — Download the 3 required apps
 
-1. **SamTimer APK** — the pre-built `app-debug.apk` from this repo's [Releases page](https://github.com/Floppa-is-cool/SamTimer-exynos-/releases/tag/Realese)
+1. **SamTimer APK** — the pre-built `app-debug.apk` from this repo's [Releases page](https://github.com/Floppa-is-cool/SamTimer-exynos-/releases)
 2. **KernelSU-Next APK** — latest release from KernelSU-Next on GitHub *(regular KernelSU will not work)*
 3. **Shizuku** — from the Google Play Store
 
