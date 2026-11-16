@@ -37,8 +37,7 @@ Use at your own risk. The authors take no responsibility for data loss, bricked 
 
 This is a **temporary** root method for devices you own or are explicitly authorized to test. The exploit is a probabilistic kernel UAF — a failed run can leave the system unstable until the next reboot. Rebooting always restores the phone to a clean, unrooted state.
 
-> ⚠️ **CRITICAL REBOOT WARNING:** Do not use the normal "Restart" button or `adb reboot` after rooting. A soft reboot will cause a kernel panic due to the parked timer UAF nodes. To safely restart, **Power Off** (hold the power button), then turn the device back on manually.
-fix is coming soon
+>  **soft reboot button-:** give app superuser to make it work
 
 ---
 
