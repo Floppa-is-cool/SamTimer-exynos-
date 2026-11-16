@@ -10,7 +10,7 @@ One-tap Android root for Samsung Galaxy devices, built around the **CVE-2026-982
 
 > Based on the **CVE-2026-98260-aurora** repo — its timer LPE port (real-cred zero-write / fake-cred ksud late-load chains) is what `app/src/main/cpp/timer.c` evolved from.
 
-> **Status:** 🚧 TODO — add logs saving and better ui and auto kernel su next open
+> **Status:** 🚧 TODO — add logs saving and better ui, auto kernel su next open,app logo
 
 ---
 
